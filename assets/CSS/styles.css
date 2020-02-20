@@ -8,6 +8,10 @@
     font-size: 1em;
 }
 
+.navbar:hover {
+    background-color: #1762a7;
+}
+
 .navbar-textcol {
     color: #ffffff !important;
 }
@@ -63,4 +67,8 @@
 
 body {
     background-color: #2f303a;
+}
+
+main {
+    color: #ffffff;
 }
