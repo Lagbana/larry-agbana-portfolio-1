@@ -72,3 +72,36 @@ body {
 main {
     color: #ffffff;
 }
+
+.profile-pic {
+    width: 24em;
+    height: 24em;
+    border: 2px solid #1762a7;
+}
+
+.row1 .p1 {
+    font-size: 1.5em;
+    color: #c4c4c4;
+}
+.row1 .p2 {
+    font-size: 3.375em;
+}
+.row2 p {
+    font-size: 1.125em;
+    color: #c4c4c4;
+}
+/* .row4 {
+
+} */
+
+.button-custom {
+    width: 120px !important;
+}
+
+.vertical-center {
+    /* margin: 0; */
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
