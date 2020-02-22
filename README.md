@@ -1,6 +1,7 @@
 # Portfolio
-- The purpose of this exercise was to build my portfolio website using HTML5, Bootstrap 4, and CSS.
-- Build website to be fully responsive across all devices.
+The purpose of this exercise was to:
+- Build my portfolio website to be fully responsive across all devices.
+- Use various functionalities of HTML5, Bootstrap 4, and CSS.
 
 
 ## Authors
