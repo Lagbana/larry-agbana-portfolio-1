@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Larry Agbana: Welcome to my portfolio website</title>
+  <link rel="shortcut icon" type="image/png" href="assets/Imgs/favicon.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/CSS/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/91e3c6200f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,32 +20,34 @@
         <img src="assets/Imgs/LA-logo-all-white.png" alt="Larry Agbana">
       </a>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse mr-5" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link navbar-textcol px-5" href="portfolio.html">Portfolio</a>
+          <a class="nav-link navbar-textcol px-sm-4 px-m-4 px-l-4 px-xl-5" 
+          href="portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navbar-textcol px-5" href="blog.html">Blog</a>
+          <a class="nav-link navbar-textcol px-sm-4 px-m-4 px-l-4 px-xl-5" 
+          href="blog.html">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navbar-textcol px-5" href="contact.html">Contact</a>
+          <a class="nav-link navbar-textcol px-sm-4 px-m-4 px-l-4 px-xl-5" 
+          href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
-    <div class="social-icons">
+    <div class="social-icons mx-auto mr-md-1 mr-lg-2 mr-xl-3">
       <ul class="nav justify-content-start list-group-horizontal">
-        <li class="px-2">
+        <li>
           <a class="nav-link active navbar-textcol" href="https://github.com/Lagbana" target="_blank"
             rel="noreferrer noopener">
             <img class="img-fluid mx-auto" id="github" src="assets/Imgs/github-logo.png" alt="github">
           </a>
         </li>
-        <li class="pl-5">
+        <li class="mx-auto ml-sm-5 ml-md-3 ml-lg-4 ml-xl-4  px-md-4 px-md-4 px-lg-3 px-xl-3">
           <a class="nav-link active navbar-textcol" href="https://www.linkedin.com/in/larryagbana/" target="_blank"
             rel="noreferrer noopener">
             <img class="img-fluid mx-auto" id="linkedin" src="assets/Imgs/linkedin-logo.png" alt="linkedin">
@@ -52,32 +56,64 @@
       </ul>
     </div>
   </nav>
-  <main class="container container-sm container-md container-lg container-xl mt-5 pt-5">
-    <div class="row vertical-center mr-5">
-      <div class="col-4">
-        <img class="rounded-circle profile-pic img-fluid" src="assets/Imgs/Me.png" alt="Larry Agbana">
+  <main class="container-fluid mt-5 mb-5">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 mx-auto">
+        <div class="row">
+          <div class="col-12 col-sm-4 col-md-4 col-l-4 col-xl-4 img-block">
+            <img class="rounded-circle profile-pic img-fluid" src="assets/Imgs/Me.png" alt="Larry Agbana">
+          </div>
+          <div class=" col-12 col-sm-6 col-md-6 col-l-6 col-xl-7 ml-5">
+            <div class="row1">
+              <p class="p1 mb-0 overflow-hidden">Hello and welcome</p>
+              <p class="p2 mt-0 overflow-hidden">I'm Larry Agbana.</p>
+            </div>
+            <div class="row2 mt-3">
+              <p>A full stack software developer who consciously balances technical excellence
+                with flawless user experience in order to create customer and business value.<br><br>
+                As of today, I have completed <span> # </span>of personal projects. Explore my projects and reach out for suggestions,
+                questions, collaboration, or recruiting. <br><br> Thanks for visiting!
+              </p>
+            </div>
+            <div class="row4">
+              <div class="px-1 col-3 col-sm-5 px-sm-1 col-md-5 px-md-1 col-lg-2 px-lg-1 col-xl-1 px-xl-1 float-left">
+                <a class="btn btn-primary button-custom" href="portfolio.html" role="button">View Work</a>
+              </div>
+              <div class="col-3 ml-5 col-sm-4 pl-sm-4 ml-sm-3 pl-md-1 ml-md-1 pl-lg-5 ml-lg-5 pl-xl-5 ml-xl-5 float-left">
+                <a class="btn btn-primary button-custom" href="contact.html" role="button">Hire Me</a>
+              </div>
+              
+            </div>
+        </div>
 
+        </div>
+        
       </div>
-      <div class="col-6 ml-5">
-        <div class="row1">
-          <p class="p1 mb-0">hello and welcome</p>
-          <p class="p2 mt-0">I'm Larry Agbana.</p>
-        </div>
-        <div class="row2 mt-3">
-          <p>A full stack software developer who consciously balances technical excellence
-            with flawless user experience in order to create customer and business value.<br><br>
-            As of today, I have completed # of personal projects. Explore my projects and reach out for suggestions,
-            questions, collaboration, or recruiting. <br><br> Thanks for visiting!
-          </p>
-        </div>
-        <div class="row4">
-          <a class="btn btn-primary bt-size button-custom" href="portfolio.hmtl" role="button">View Work</a>
-          <a class="btn btn-primary mx-4 bt-size button-custom" href="contact.html" role="button">Hire Me</a>
-        </div>
-      </div>
+    </div> 
+  </main>
+  
+  <!-- Connect -->
+
+  <!-- <div class="container-fluid padding connect">
+  <div class="row text-center padding">
+    <div class="col-12">
+      <h2 class="text-white">Connect</h2>
+    </div>
+    <div class="col-12 social padding">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
 
-  </main>
+  </div> -->
+
+  </div>
+  <footer class="footer">
+    <div class="container-fluid text-center text-white">
+      <span class="text-muted"> &copy Copyright 2020.</span>
+    </div>
+  </footer>
+
+
 
 
 
