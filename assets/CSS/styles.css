@@ -1,11 +1,14 @@
-/* navbar:hover {
-    @include invisible(visible);
-} */
+/* @import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins"; */
 
+* {
+    box-sizing: border-box;
+}
 .navbar-custom {
     background-color: transparent;
     font-family: 'Poppins', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .navbar:hover {
@@ -17,9 +20,8 @@
 }
 
 .logo {
-    height: 3em;
-    width: 3.75em;
-    padding-left: 1em;
+    height: 3rem;
+    width: 3.75rem;
 }
 
 .logo a {
@@ -32,13 +34,18 @@
     max-height: 100%;
 }
 
+.my-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
 .navlink-pos {
-    margin-right: 5em !important; 
+    margin-right: 5rem !important; 
 }
 
 .social-icons {
-    height: 3em;
-    width: 9em;
+    height: 3rem;
+    width: 9rem;
 }
 .social-icons ul {
     width: inherit;
@@ -46,23 +53,23 @@
 }
 
 .social-icons ul li {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .social-icons ul li a {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
 }
 
 #github {
-    max-width: 32px;
-    max-height: 32px;
+    max-width: 2rem;
+    max-height: 2rem;
 }
 
 #linkedin {
-    max-width: 38px;
-    max-height: 32px;
+    max-width: 2.375rem;
+    max-height: 2rem;
 }
 
 body {
@@ -71,37 +78,158 @@ body {
 
 main {
     color: #ffffff;
+    padding-top: 2rem;
 }
 
+.img-block {
+    width: 24rem;
+    height: 24rem;
+}
 .profile-pic {
-    width: 24em;
-    height: 24em;
-    border: 2px solid #1762a7;
+    /* width: 24rem;
+    height: 24em; */
+    border: 0.125rem solid #1762a7;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .row1 .p1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #c4c4c4;
 }
 .row1 .p2 {
-    font-size: 3.375em;
+    font-size: 3.375rem;
 }
 .row2 p {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     color: #c4c4c4;
 }
-/* .row4 {
 
-} */
-
-.button-custom {
-    width: 120px !important;
+.row2 span {
+    color: red;
 }
 
-.vertical-center {
-    /* margin: 0; */
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+.button-custom {
+    width: 7.5rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: -15px;
+    width: 100%;
+    height: 3.75rem;
+    background-color: #d4d4d4;
+}
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: -10px;
+
   }
+  hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 50%;               
+    background-color:#b4b4b4;
+    height: 1px;
+  }
+
+  .card{
+      font-size: 1rem;
+      width: 18rem;
+  }
+
+  @media (max-width: 575px){
+    .card{
+        font-size: 1rem;
+        width: 12rem;
+        margin-bottom: 1.5rem;    
+    }
+    form {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .form-group {
+        width: 100%;
+    }
+    form div h1{
+        margin-left: 1rem;
+    }
+    .contact-form {
+        background-color:red;
+        width: 100%;
+    }
+  }
+
+  @media (min-width: 576px){
+    .card{
+        font-size: 1rem;
+        width: 18rem;
+        margin: 1rem;    
+    }
+  }
+  @media (min-width: 768px){
+      .card{
+          font-size: 1rem;
+          width: 10.8rem;
+          margin: 1rem;
+      }
+  }
+
+  @media (min-width: 992px){
+    .card{
+        font-size: 1rem;
+        width: 16rem;
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .card{
+        font-size: 1rem;
+        width: 18rem;
+    }
+}
+
+.padding {
+    padding: 3rem;
+    margin-left: 2rem;
+
+}
+
+/* .social {
+    padding-top: 0.5rem;;
+}
+
+.social a {
+    font-size: 4.5rem;
+    padding: 2rem;
+}
+
+.fa-linkedin {
+    color: #0e76a8
+}
+
+.fa-github {
+    color: #4078c0 ;
+} */
+
+.form-group {
+    width: 100%;
+    margin-left: 0rem;
+    margin-top: 1rem;
+}
+
+.form-group h1 {
+    margin-top: -5rem;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 8rem;
+    width: 50%;
+    margin-bottom: 5rem;
+}
