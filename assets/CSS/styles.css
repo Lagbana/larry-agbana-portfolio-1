@@ -159,7 +159,6 @@ main {
         margin-left: 1rem;
     }
     .contact-form {
-        background-color:red;
         width: 100%;
     }
   }
@@ -228,6 +227,7 @@ main {
 }
 
 .contact-form {
+    border-radius: 1rem;
     background-color: #ffffff;
     padding: 8rem;
     width: 50%;
