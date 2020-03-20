@@ -1,8 +1,14 @@
-# Portfolio
-The purpose of this exercise was to:
-- Build my portfolio website to be fully responsive across all devices.
-- Use various functionalities of HTML5, Bootstrap 4, and CSS.
+# Portfolio Website
 
 
-## Authors
-- Larry Agbana
+### Outcome
+Product: a portfolio website
+
+Learning: working with bootsrap 4
+
+
+## Link: view product
+https://lagbana.github.io/larry-agbana-portfolio-1/index.html
+
+
+
