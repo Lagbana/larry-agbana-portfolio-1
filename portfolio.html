@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/Imgs/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="assets/CSS/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
@@ -53,141 +54,98 @@
             </ul>
         </div>
     </nav>
-    <section class="container ptcontain padding">
-        <div class="row">
+    <main class='row px-5 mx-5'>
+        <div class="row mx-auto mb-5">
             <div class="col-12 text-center">
-                <h class="display-4 text-white">My Projects</h1>
+                <h class="display-4 text-white">PROJECTS</h1>
+                    <hr id='fancy-underline'>
             </div>
         </div>
+        <div style='width:100%'>
+            <ul class="nav nav-pills mx-auto px-0" style='width:40%'>
+                <li class="nav-item language" style='display: block;'>
+                    <button type="button" class="btn nav-link lang-button" id="all-projects">All Projects</button>
+                </li>
+                <li class="nav-item language" style='display: block;'>
+                    <button type="button" class="btn nav-link lang-button" id="javascript">JavaScript</button>
+                </li>
+                <li class="nav-item language" style='display: block;'>
+                    <button type="button" class="btn nav-link lang-button" id="jquery">jQuery</button>
+                </li>
+                <li class="nav-item language" style='display: none;'>
+                    <button type="button" class="btn nav-link lang-button" id="ruby">Ruby/Rails</button>
+                </li>
+                <li class="nav-item language" style='display: none;'>
+                    <button type="button" class="btn nav-link lang-button" id="typescript">TypeScript</button>
+                </li>
+                <li class="nav-item language" style='display: none;'>
+                    <button type="button" class="btn nav-link lang-button" id="python">Python</button>
+                </li>
+                <li class="nav-item language" style='display: none;'>
+                    <button type="button" class="btn nav-link lang-button" id="go">GO</button>
+                </li>
+            </ul>
+        </div>
+        <div class="card text-center col-sm-12 mx-auto portfolio-theme">
+            <div class="card-group">
+                <div class="card javascript all-lang col-lg-4 col-xl-4">
+                    <img class="card-img-top"
+                        src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/COVID-19.jpg?raw=true"
+                        alt="COVID-19" onmouseover="this.src='../assets/Imgs/search.gif'" onmouseout="this.src='https://github.com/Lagbana/portfolio-imgs/blob/master/assets/COVID-19.jpg?raw=true'">
+                    <div class="card-body">
+                        <h5 class="card-title">COVID-19 Info Tracker</h5>
+                        <p class="card-text">API sourced reported COVID-19 data, visualization, and curated related news.</p>
+                        <p> <a href="https://lagbana.github.io/covid19-tracker/" type="button" class="btn btn-sm view-website">View Website</a>
+                            <a href="https://github.com/Lagbana/covid19-tracker" type="button" class="btn btn-sm view-github">GitHub Repo</a>
+                        </p>
+                        <p class="card-text"><small class="text-muted"><span class='font-weight-light font-italic'>Photo by M.Sanchez</span></small></p>
+                    </div>
+                </div>
+                <div class="card javascript all-lang col-lg-4 col-xl-4">
+                    <img class="card-img-top"
+                        src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/sunny-day.jpg?raw=true"
+                        alt="Weather Dashboard" onmouseover="this.src='../assets/Imgs/weather.gif'" onmouseout="this.src='https://github.com/Lagbana/portfolio-imgs/blob/master/assets/sunny-day.jpg?raw=true'">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Dashboard</h5>
+                        <p class="card-text">Find today's and the 5-day forecast weather by searching a city. Data from openweather API.</p>
+                        <p> <a href="https://lagbana.github.io/weather-dashboard/" type="button" class="btn btn-sm view-website">View Website</a>
+                            <a href="https://github.com/Lagbana/weather-dashboard" type="button" class="btn btn-sm view-github">GitHub Repo</a>
+                        </p>
+                        <p class="card-text"><small class="text-muted"><span class='font-weight-light font-italic'>Photo by D. Nepriakhina</span></small></p>
+                    </div>
+                </div>
+                <div class="card jquery all-lang col-lg-4 col-xl-4">
+                    <img class="card-img-top"
+                        src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/planner.jpg?raw=true"
+                        alt="Workday Scheduler" onmouseover="this.src='../assets/Imgs/planner.gif'" onmouseout="this.src='https://github.com/Lagbana/portfolio-imgs/blob/master/assets/planner.jpg?raw=true'">
+                    <div class="card-body">
+                        <h5 class="card-title">Workday Scheduler</h5>
+                        <p class="card-text">A 9am - 5pm Scheduler. Hours are color coded for past, current, and future time.</p>
+                        <p> <a href="https://lagbana.github.io/workday-scheduler/" type="button" class="btn btn-sm view-website">View Website</a>
+                            <a href="https://github.com/Lagbana/workday-scheduler" type="button" class="btn btn-sm view-github">GitHub Repo</a>
+                        </p>
+                        <p class="card-text"><small class="text-muted"><span class='font-weight-light font-italic'>Photo by G.
+                            Carstens-Peters</span></small></p>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Portfolio Grid -->
+            <div class="card-body">
 
-        <div class="row text-center padding">
-            <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
-                <div class="card">
-                    <img src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/COVID-19.jpg?raw=true" class="card-img-top" alt="COVID-19">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h4>COVID-19 Info Tracker</h4>Real-time reported COVID-19 information<br><br><strong>Coming
-                            Soon</strong><br><br><span class='font-weight-light font-italic'>Photo by M. Sanchez</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
-                <div class="card">
-                    <a href="https://lagbana.github.io/weather-dashboard/" target='_blank'><img src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/sunny-day.jpg?raw=true" class="card-img-top"
-                        alt="Weather Dashboard"></a>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h4>Weather Dashboard</h4>A day to sun tan or a day for blankets and tea?<br><br>Click on
-                            image to view <br><br><span class='font-weight-light font-italic'>Photo by D. Nepriakhina
-                        </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
-                <div class="card">
-                    <a href="https://lagbana.github.io/workday-scheduler/" target="_blank"><img src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/planner.jpg?raw=true"
-                        class="card-img-top" alt="Workday Scheduler"></a>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h4>Workday Planner</h4>Make things happen today with this work day agenda.<br><br> Click on
-                            image to view.<br><br><span class='font-weight-light font-italic'>Photo by G.
-                                Carstens-Peters</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <hr>
-        <div class="row text-center padding">
-            <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
-                <div class="card">
-                    <a href="https://lagbana.github.io/quiz-app/" target="_blank"><img src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/world-trivia.jpg?raw=true" class="card-img-top" alt="quiz app"></a>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h4>Quiz App</h4>Short world trivia quiz with a friend? (there is a leaderboad
-                            &#128512;).<br><br> Click on image to view.<br><br><span
-                                class='font-weight-light font-italic'>Photo by Adolfo Félix</span>
-                        </p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
-                <div class="card">
-                    <a href="https://lagbana.github.io/password-generator/" target='_blank'><img src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/password.jpg?raw=true" class="card-img-top" alt="password generator"></a>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h4>Password Generator</h4>Need a password stronger than "abc123"? Try this app.<br><br>Click on the image to view.<br><br><span
-                                class='font-weight-light font-italic'>Photo by Marcos Mayer</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
-                <div class="card">
-                    <a href="index.html"><img src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/portfolio.jpg?raw=true" class="card-img-top" alt="Coming Soon"></a>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h4>Portfolio Website</h4>Focus: software
-                            development and product management<br><br>Click on the image to view.<br><br><span
-                                class='font-weight-light font-italic'>Photo by D. MacInnes</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row text-center padding">
-            <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Coming Soon">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h4>Coming Soon</h4> quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Coming Soon">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h4>Coming Soon</h4> quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Coming Soon">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h4>Coming Soon</h4> quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </section>
-    <div class= 'ml-5 mb-5' width='100%'>
-        <span class='text-muted font-italic mx-auto'>Photos sourced from Unsplash.com</span>
-    </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
     <footer class="footer mx-auto">
         <div class="container-fluid mx-auto text-center text-white">
             <span class="text-muted text-center"> &copy Copyright 2020.</span>
         </div>
     </footer>
-
+<script src="scripts/index.js"></script>
 </body>
 
 </html>
