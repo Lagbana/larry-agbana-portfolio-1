@@ -7,7 +7,7 @@
     <title>Larry Agbana: Full Stack Developer</title>
     <link rel="shortcut icon" type="image/png" href="assets/Imgs/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="assets/CSS/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -32,13 +32,13 @@
                 <li class="nav-item">
                     <a class="nav-link navbar-textcol px-sm-4 px-m-4 px-l-4 px-xl-5" href="blog.html">Blog</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link navbar-textcol px-sm-4 px-m-4 px-l-4 px-xl-5" href="contact.html">Contact</a>
-                </li>
+                </li> -->
             </ul>
         </div>
-        <div class="social-icons mx-auto mr-md-1 mr-lg-2 mr-xl-3">
-            <ul class="nav justify-content-start list-group-horizontal">
+        <div class="social-icons mx-0 mr-md-1 mr-lg-2 mr-xl-3">
+            <ul class="nav justify-content-start ">
                 <li>
                     <a class="nav-link active navbar-textcol" href="https://github.com/Lagbana" target="_blank"
                         rel="noreferrer noopener">
@@ -54,7 +54,7 @@
             </ul>
         </div>
     </nav>
-    <main class='row px-5 mx-5'>
+    <main class='row mx-0 px-xl-5'>
         <div class="row mx-auto mb-5">
             <div class="col-12 text-center">
                 <h class="display-4 text-white">PROJECTS</h1>
@@ -62,7 +62,7 @@
             </div>
         </div>
         <div style='width:100%'>
-            <ul class="nav nav-pills mx-auto px-0" style='width:40%'>
+            <ul class="nav nav-pills lang-pills mx-auto px-0" style='width:40%'>
                 <li class="nav-item language" style='display: block;'>
                     <button type="button" class="btn nav-link lang-button" id="all-projects">All Projects</button>
                 </li>
@@ -86,46 +86,61 @@
                 </li>
             </ul>
         </div>
-        <div class="card text-center col-sm-12 mx-auto portfolio-theme">
-            <div class="card-group">
-                <div class="card javascript all-lang col-lg-4 col-xl-4">
+        <div class="container-fluid text-center col-sm-12 mx-auto portfolio-theme">
+            <div class="row ptcontain">
+                <div class="card javascript all-lang col-md-5 col-lg-3 col-xl-3">
                     <img class="card-img-top"
                         src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/COVID-19.jpg?raw=true"
-                        alt="COVID-19" onmouseover="this.src='../assets/Imgs/search.gif'" onmouseout="this.src='https://github.com/Lagbana/portfolio-imgs/blob/master/assets/COVID-19.jpg?raw=true'">
+                        alt="COVID-19" onmouseover="this.src='../assets/Imgs/search.gif'"
+                        onmouseout="this.src='https://github.com/Lagbana/portfolio-imgs/blob/master/assets/COVID-19.jpg?raw=true'">
                     <div class="card-body">
                         <h5 class="card-title">COVID-19 Info Tracker</h5>
-                        <p class="card-text">API sourced reported COVID-19 data, visualization, and curated related news.</p>
-                        <p> <a href="https://lagbana.github.io/covid19-tracker/" type="button" class="btn btn-sm view-website">View Website</a>
-                            <a href="https://github.com/Lagbana/covid19-tracker" type="button" class="btn btn-sm view-github">GitHub Repo</a>
+                        <p class="card-text">API sourced reported COVID-19 data, data visualization, and curated related
+                            news from NYT API.</p> <br>
+                        <p> <a href="https://lagbana.github.io/covid19-tracker/" type="button"
+                                class="btn btn-sm view-website">View Website</a>
+                            <a href="https://github.com/Lagbana/covid19-tracker" type="button"
+                                class="btn btn-sm view-github">GitHub Repo</a>
                         </p>
-                        <p class="card-text"><small class="text-muted"><span class='font-weight-light font-italic'>Photo by M.Sanchez</span></small></p>
+                        <p class="card-text"><small class="text-muted"><span class='font-weight-light font-italic'>Photo
+                                    by M.Sanchez</span></small></p>
                     </div>
                 </div>
-                <div class="card javascript all-lang col-lg-4 col-xl-4">
+                <div class="card javascript all-lang col-md-5 col-lg-3 col-xl-3">
                     <img class="card-img-top"
                         src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/sunny-day.jpg?raw=true"
-                        alt="Weather Dashboard" onmouseover="this.src='../assets/Imgs/weather.gif'" onmouseout="this.src='https://github.com/Lagbana/portfolio-imgs/blob/master/assets/sunny-day.jpg?raw=true'">
+                        alt="Weather Dashboard"  onmouseover="this.src='../assets/Imgs/weather.gif'"
+                        onmouseout="this.src='https://github.com/Lagbana/portfolio-imgs/blob/master/assets/sunny-day.jpg?raw=true'">
                     <div class="card-body">
                         <h5 class="card-title">Weather Dashboard</h5>
-                        <p class="card-text">Find today's and the 5-day forecast weather by searching a city. Data from openweather API.</p>
-                        <p> <a href="https://lagbana.github.io/weather-dashboard/" type="button" class="btn btn-sm view-website">View Website</a>
-                            <a href="https://github.com/Lagbana/weather-dashboard" type="button" class="btn btn-sm view-github">GitHub Repo</a>
+                        <p class="card-text">Find today's and the 5-day weather forecast of a searched city. Data fetched from
+                            openweather API.</p> <br>
+                        <p> <a href="https://lagbana.github.io/weather-dashboard/" type="button"
+                                class="btn btn-sm view-website">View Website</a>
+                            <a href="https://github.com/Lagbana/weather-dashboard" type="button"
+                                class="btn btn-sm view-github">GitHub Repo</a>
                         </p>
-                        <p class="card-text"><small class="text-muted"><span class='font-weight-light font-italic'>Photo by D. Nepriakhina</span></small></p>
+                        <p class="card-text"><small class="text-muted"><span class='font-weight-light font-italic'>Photo
+                                    by D. Nepriakhina</span></small></p>
                     </div>
                 </div>
-                <div class="card jquery all-lang col-lg-4 col-xl-4">
+                <div class="card jquery all-lang col-md-5 col-lg-3 col-xl-3">
                     <img class="card-img-top"
                         src="https://github.com/Lagbana/portfolio-imgs/blob/master/assets/planner.jpg?raw=true"
-                        alt="Workday Scheduler" onmouseover="this.src='../assets/Imgs/planner.gif'" onmouseout="this.src='https://github.com/Lagbana/portfolio-imgs/blob/master/assets/planner.jpg?raw=true'">
+                        alt="Workday Scheduler" onmouseover="this.src='../assets/Imgs/planner.gif'"
+                        onmouseout="this.src='https://github.com/Lagbana/portfolio-imgs/blob/master/assets/planner.jpg?raw=true'">
                     <div class="card-body">
                         <h5 class="card-title">Workday Scheduler</h5>
-                        <p class="card-text">A 9am - 5pm Scheduler. Hours are color coded for past, current, and future time.</p>
-                        <p> <a href="https://lagbana.github.io/workday-scheduler/" type="button" class="btn btn-sm view-website">View Website</a>
-                            <a href="https://github.com/Lagbana/workday-scheduler" type="button" class="btn btn-sm view-github">GitHub Repo</a>
+                        <p class="card-text">A 9am - 5pm Scheduler; input agenda and click save. Hours are color coded
+                            for past, current, and future time.</p> <br>
+                        <p> <a href="https://lagbana.github.io/workday-scheduler/" type="button"
+                                class="btn btn-sm view-website">View Website</a>
+                            <a href="https://github.com/Lagbana/workday-scheduler" type="button"
+                                class="btn btn-sm view-github">GitHub Repo</a>
                         </p>
-                        <p class="card-text"><small class="text-muted"><span class='font-weight-light font-italic'>Photo by G.
-                            Carstens-Peters</span></small></p>
+                        <p class="card-text"><small class="text-muted"><span class='font-weight-light font-italic'>Photo
+                                    by G.
+                                    Carstens-Peters</span></small></p>
                     </div>
                 </div>
             </div>
@@ -140,12 +155,21 @@
 
 
 
-    <footer class="footer mx-auto">
-        <div class="container-fluid mx-auto text-center text-white">
+    <footer class="footer">
+        <div class="container mx-auto text-center text-white">
             <span class="text-muted text-center"> &copy Copyright 2020.</span>
         </div>
     </footer>
-<script src="scripts/index.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
