@@ -3,27 +3,56 @@ document.addEventListener('DOMContentLoaded', function () {
     const allProjects = document.querySelector('#all-projects');
     const javascript = document.querySelector('#javascript');
     const jquery = document.querySelector('#jquery');
-    const ruby = document.querySelector('#ruby');
-    const typescript = document.querySelector('#typescript');
-    const python = document.querySelector('#python');
-    const go = document.querySelector('#go');
+    const nodeJS = document.querySelector('#nodeJS');
+    const express = document.querySelector('#express');
+    const mysql = document.querySelector('#mysql');
+    const commandLine = document.querySelector('#command-line');
     const jsCards = document.querySelectorAll('.javascript')
-    const tsCards = document.querySelectorAll('.typescript')
+    const expressCards = document.querySelectorAll('.express')
+    const nodeJSCards = document.querySelectorAll('.nodeJS')
+    const mysqlCards = document.querySelectorAll('.mysql')
+    const cliCards = document.querySelectorAll('.commandline')
     const jQueryCards = document.querySelectorAll('.jquery')
-    const pyCards = document.querySelectorAll('.python')
-    const ruCards = document.querySelectorAll('.ruby')
-    const goCards = document.querySelectorAll('.go')
     const allCards = document.querySelectorAll('.all-lang')
 
 
     const viewProjects = (event) => {
         const id = event.target.id
         switch (id) {
+            case 'all-projects':
+                for (let card of allCards) {
+                    card.style.display = "block";
+                };
+                break;
             case 'javascript':
                 for (let card of allCards) {
                     card.style.display = "none";
                 };
                 for (let card of jsCards) {
+                    card.style.display = "block";
+                };
+                break;
+            case 'nodeJS':
+                for (let card of allCards) {
+                    card.style.display = "none";
+                };
+                for (let card of nodeJSCards) {
+                    card.style.display = "block";
+                };
+                break;
+            case 'express':
+                for (let card of allCards) {
+                    card.style.display = "none";
+                };
+                for (let card of expressCards) {
+                    card.style.display = "block";
+                };
+                break;
+            case 'mysql':
+                for (let card of allCards) {
+                    card.style.display = "none";
+                };
+                for (let card of mysqlCards) {
                     card.style.display = "block";
                 };
                 break;
@@ -35,42 +64,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     card.style.display = "block";
                 };
                 break;
-            case 'ruby':
+            case 'command-line':
                 for (let card of allCards) {
                     card.style.display = "none";
                 };
-                for (let card of ruCards) {
+                for (let card of cliCards) {
                     card.style.display = "block";
                 };
                 break;
-            case 'typescript':
-                for (let card of allCards) {
-                    card.style.display = "none";
-                };
-                for (let card of tsCards) {
-                    card.style.display = "block";
-                };
-                break;
-            case 'python':
-                for (let card of allCards) {
-                    card.style.display = "none";
-                };
-                for (let card of pyCards) {
-                    card.style.display = "block";
-                };
-                break;
-            case 'go':
-                for (let card of allCards) {
-                    card.style.display = "none";
-                };
-                for (let card of goCards) {
-                    card.style.display = "block";
-                };
-                break;
-            default:
-                for (let card of allCards) {
-                    card.style.display = "block";
-                };
+
         }
     }
 
@@ -78,10 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
     allProjects.addEventListener('click', viewProjects)
     javascript.addEventListener('click', viewProjects)
     jquery.addEventListener('click', viewProjects)
-    ruby.addEventListener('click', viewProjects)
-    typescript.addEventListener('click', viewProjects)
-    python.addEventListener('click', viewProjects)
-    go.addEventListener('click', viewProjects)
+    nodeJS.addEventListener('click', viewProjects)
+    express.addEventListener('click', viewProjects)
+    mysql.addEventListener('click', viewProjects)
+    commandLine.addEventListener('click', viewProjects)
 
 
 }, false);
