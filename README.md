@@ -16,6 +16,3 @@ Version 1 Portfolio
 ## Deployed Link
 
      https://lagbana.github.io/larry-agbana-portfolio-1/index.html
-
-
-
