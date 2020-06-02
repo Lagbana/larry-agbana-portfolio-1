@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-
+    // Button ID's
     const allProjects = document.querySelector('#all-projects');
     const javascript = document.querySelector('#javascript');
     const jquery = document.querySelector('#jquery');
@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const express = document.querySelector('#express');
     const mysql = document.querySelector('#mysql');
     const commandLine = document.querySelector('#command-line');
+
+    // Project card classes
     const jsCards = document.querySelectorAll('.javascript')
     const expressCards = document.querySelectorAll('.express')
     const nodeJSCards = document.querySelectorAll('.nodeJS')
@@ -15,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const jQueryCards = document.querySelectorAll('.jquery')
     const allCards = document.querySelectorAll('.all-lang')
 
-
+    /*
+        *viewProjects - selects which project cards to display depending on the language/framework button clicked on the portfolio page
+    */
     const viewProjects = (event) => {
         const id = event.target.id
         switch (id) {
@@ -76,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-
+    // event listeners on portfolio page buttons
     allProjects.addEventListener('click', viewProjects)
     javascript.addEventListener('click', viewProjects)
     jquery.addEventListener('click', viewProjects)
