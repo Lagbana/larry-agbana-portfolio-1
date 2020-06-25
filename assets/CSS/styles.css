@@ -88,23 +88,25 @@ body {
     margin: 0 auto;
     width: 100%;
     min-width: 320px;
-    height: 100%;
+    position: relative;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 
 .home-footer {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 3rem;
     margin-top: 6.25rem;
-    margin-bottom: 0.625rem;
-    bottom: -1rem;
+    /* margin-bottom: 0.625rem; */
+    bottom: 0;
+    /* bottom: -1rem; */
     background-color: #d4d4d4;
 }
 .footer {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 3rem;
     background-color: #d4d4d4;
